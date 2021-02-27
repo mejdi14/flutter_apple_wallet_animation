@@ -46,7 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   alignment: Alignment.centerLeft,
                   child: Text(
                     "WALLET",
-
                     style: TextStyle(color: Colors.black,
                     fontSize: 30),
                   )
