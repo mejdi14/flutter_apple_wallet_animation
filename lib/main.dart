@@ -34,34 +34,36 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: SafeArea(
         top: true,
-        child: CustomScrollView(
-          slivers: <Widget>[
-           SliverStickyHeader(
-             header: Container(
-               height: 60,
-               color: Colors.lightBlue,
-               padding: EdgeInsets.symmetric(horizontal: 60),
-               alignment: Alignment.centerLeft,
-               child: Text(
-                 'Header',
-                 style: TextStyle(color: Colors.lightBlue),
-               ),
-             ),
-           ),
+        child:CustomScrollView(
+          slivers: [
+            SliverStickyHeader(
+                header: Container(
+                  height: 60,
+                  color: Colors.white,
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Header 1",
+                    style: TextStyle(color: Colors.red),
+                  )
+                  ,
+                ),
+            ),
             SliverStickyHeader(
               header: Container(
                 height: 60,
                 color: Colors.orange,
-                padding: EdgeInsets.symmetric(horizontal: 60),
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  'Header',
-                  style: TextStyle(color: Colors.lightBlue),
-                ),
+                  "Header 2",
+                  style: TextStyle(color: Colors.white),
+                )
+                ,
               ),
             )
           ],
-        ),
+        )
       ),
     );
   }
