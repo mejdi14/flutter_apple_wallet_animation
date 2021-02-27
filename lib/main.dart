@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sticky_header/flutter_sticky_header.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,10 +45,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Theme.of(context).scaffoldBackgroundColor,
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
                   alignment: Alignment.centerLeft,
-                  child: Text(
-                    "WALLET",
-                    style: TextStyle(color: Colors.black,
-                    fontSize: 30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "WALLET",
+                        style: TextStyle(color: Colors.black,
+                        fontSize: 30),
+                      ),
+                      IconButton( icon: Icon(FontAwesomeIcons.wallet, color: Colors.black,), onPressed: (){
+
+                      })
+                    ],
                   )
                   ,
                 ),
