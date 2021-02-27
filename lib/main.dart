@@ -39,6 +39,21 @@ class _MyHomePageState extends State<MyHomePage> {
           child: CustomScrollView(
             slivers: <Widget>[
               SliverStickyHeader(
+                header: Container(
+                  height: 140,
+                  color: Theme.of(context).scaffoldBackgroundColor,
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "WALLET",
+
+                    style: TextStyle(color: Colors.black,
+                    fontSize: 30),
+                  )
+                  ,
+                ),
+              ),
+              SliverStickyHeader(
                   header: Container(
                     height: 60,
                     color: Colors.white,
